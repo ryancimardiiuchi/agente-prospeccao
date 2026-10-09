@@ -10,7 +10,7 @@
 import { Link, useNavigate, type LinkProps } from "@tanstack/react-router";
 
 export { Link };
-export type AppPath = LinkProps["to"];
+export type AppPath = NonNullable<LinkProps["to"]>;
 
 export function useGo() {
   const navigate = useNavigate();

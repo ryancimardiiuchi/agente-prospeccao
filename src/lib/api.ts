@@ -12,7 +12,7 @@
  */
 import axios, { isAxiosError } from "axios";
 
-export const API_URL: string = import.meta.env.VITE_API_URL ?? "http://localhost:3000";
+export const API_URL: string = import.meta.env["VITE_API_URL"] ?? "http://localhost:3000";
 export const TOKEN_KEY = "lavo_token";
 
 export function getToken(): string | null {
@@ -34,7 +34,7 @@ export function errorMessage(err: unknown, fallback = "Algo deu errado. Tente no
     if (!err.response) {
       return `Não foi possível conectar à API (${API_URL}). Verifique se o servidor está em execução.`;
     }
-    const data = err.response.data as Record<string, unknown> | string | undefined;
+    const data = err.response.data as any;
     if (typeof data === "string" && data) return data;
     if (data && typeof data === "object") {
       const msg = data.message ?? data.mensagem ?? data.error ?? data.erro;
