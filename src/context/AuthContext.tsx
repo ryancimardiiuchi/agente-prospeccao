@@ -21,9 +21,9 @@ interface AuthValue {
 const USER_KEY = "lavo_user";
 const AuthContext = createContext<AuthValue | null>(null);
 
-function decodeJwt(token: string): Record<string, unknown> {
+function decodeJwt(token: string): any {
   try {
-    const payload = token.split(".")[1];
+    const payload = token.split(".")[1] ?? "";
     return JSON.parse(decodeURIComponent(escape(atob(payload.replace(/-/g, "+").replace(/_/g, "/")))));
   } catch {
     return {};
@@ -31,11 +31,11 @@ function decodeJwt(token: string): Record<string, unknown> {
 }
 
 /** CONFIRMAR o formato real da resposta de POST /login. */
-function parseLogin(data: Record<string, any>, emailFallback: string) {
+function parseLogin(data: any, emailFallback: string) {
   const token: string | undefined = data.token ?? data.accessToken ?? data.jwt;
   if (!token) throw new Error("A API não retornou um token de acesso.");
   const claims = decodeJwt(token);
-  const u = (data.user ?? data.usuario ?? {}) as Record<string, any>;
+  const u: any = data.user ?? data.usuario ?? {};
   const email = String(u.email ?? claims.email ?? emailFallback);
   const user: Usuario = {
     nome: String(u.nome ?? u.name ?? claims.nome ?? claims.name ?? email.split("@")[0]),

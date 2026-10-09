@@ -78,7 +78,7 @@ const norm = (s: string) =>
  * Converte um serviço vindo da API para o formato da interface.
  * CONFIRMAR nomes dos campos reais (aqui aceitamos nome/name, preco/price...).
  */
-export function normalizarServico(raw: Record<string, unknown>, index: number): Servico {
+export function normalizarServico(raw: any, index: number): Servico {
   const nome = String(raw.nome ?? raw.name ?? raw.titulo ?? `Serviço ${index + 1}`);
   const ref = SERVICOS_REFERENCIA.find((s) => norm(s.nome) === norm(nome));
   const preco = Number(raw.preco ?? raw.price ?? raw.valor ?? ref?.preco ?? 0);
