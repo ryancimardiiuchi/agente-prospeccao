@@ -10,16 +10,20 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AcompanhamentoRouteImport } from './routes/acompanhamento'
 import { Route as AdminRouteImport } from './routes/admin'
+import { Route as AgendamentoRouteImport } from './routes/agendamento'
 import { Route as CadastroRouteImport } from './routes/cadastro'
 import { Route as CarrinhoRouteImport } from './routes/carrinho'
 import { Route as ChatRouteImport } from './routes/chat'
 import { Route as ComoFuncionaRouteImport } from './routes/como-funciona'
 import { Route as ContatoRouteImport } from './routes/contato'
+import { Route as EnderecoRouteImport } from './routes/endereco'
 import { Route as EsqueciSenhaRouteImport } from './routes/esqueci-senha'
 import { Route as HistoricoRouteImport } from './routes/historico'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as NovaSenhaRouteImport } from './routes/nova-senha'
+import { Route as PagamentoRouteImport } from './routes/pagamento'
 import { Route as PerfilRouteImport } from './routes/perfil'
 import { Route as PrecosRouteImport } from './routes/precos'
 import { Route as ServicosRouteImport } from './routes/servicos'
@@ -31,9 +35,19 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AcompanhamentoRoute = AcompanhamentoRouteImport.update({
+  id: '/acompanhamento',
+  path: '/acompanhamento',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AdminRoute = AdminRouteImport.update({
   id: '/admin',
   path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AgendamentoRoute = AgendamentoRouteImport.update({
+  id: '/agendamento',
+  path: '/agendamento',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CadastroRoute = CadastroRouteImport.update({
@@ -61,6 +75,11 @@ const ContatoRoute = ContatoRouteImport.update({
   path: '/contato',
   getParentRoute: () => rootRouteImport,
 } as any)
+const EnderecoRoute = EnderecoRouteImport.update({
+  id: '/endereco',
+  path: '/endereco',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EsqueciSenhaRoute = EsqueciSenhaRouteImport.update({
   id: '/esqueci-senha',
   path: '/esqueci-senha',
@@ -79,6 +98,11 @@ const LoginRoute = LoginRouteImport.update({
 const NovaSenhaRoute = NovaSenhaRouteImport.update({
   id: '/nova-senha',
   path: '/nova-senha',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PagamentoRoute = PagamentoRouteImport.update({
+  id: '/pagamento',
+  path: '/pagamento',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PerfilRoute = PerfilRouteImport.update({
@@ -109,16 +133,20 @@ const VerificarEmailRoute = VerificarEmailRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/acompanhamento': typeof AcompanhamentoRoute
   '/admin': typeof AdminRoute
+  '/agendamento': typeof AgendamentoRoute
   '/cadastro': typeof CadastroRoute
   '/carrinho': typeof CarrinhoRoute
   '/chat': typeof ChatRoute
   '/como-funciona': typeof ComoFuncionaRoute
   '/contato': typeof ContatoRoute
+  '/endereco': typeof EnderecoRoute
   '/esqueci-senha': typeof EsqueciSenhaRoute
   '/historico': typeof HistoricoRoute
   '/login': typeof LoginRoute
   '/nova-senha': typeof NovaSenhaRoute
+  '/pagamento': typeof PagamentoRoute
   '/perfil': typeof PerfilRoute
   '/precos': typeof PrecosRoute
   '/servicos': typeof ServicosRoute
@@ -127,16 +155,20 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/acompanhamento': typeof AcompanhamentoRoute
   '/admin': typeof AdminRoute
+  '/agendamento': typeof AgendamentoRoute
   '/cadastro': typeof CadastroRoute
   '/carrinho': typeof CarrinhoRoute
   '/chat': typeof ChatRoute
   '/como-funciona': typeof ComoFuncionaRoute
   '/contato': typeof ContatoRoute
+  '/endereco': typeof EnderecoRoute
   '/esqueci-senha': typeof EsqueciSenhaRoute
   '/historico': typeof HistoricoRoute
   '/login': typeof LoginRoute
   '/nova-senha': typeof NovaSenhaRoute
+  '/pagamento': typeof PagamentoRoute
   '/perfil': typeof PerfilRoute
   '/precos': typeof PrecosRoute
   '/servicos': typeof ServicosRoute
@@ -146,16 +178,20 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/acompanhamento': typeof AcompanhamentoRoute
   '/admin': typeof AdminRoute
+  '/agendamento': typeof AgendamentoRoute
   '/cadastro': typeof CadastroRoute
   '/carrinho': typeof CarrinhoRoute
   '/chat': typeof ChatRoute
   '/como-funciona': typeof ComoFuncionaRoute
   '/contato': typeof ContatoRoute
+  '/endereco': typeof EnderecoRoute
   '/esqueci-senha': typeof EsqueciSenhaRoute
   '/historico': typeof HistoricoRoute
   '/login': typeof LoginRoute
   '/nova-senha': typeof NovaSenhaRoute
+  '/pagamento': typeof PagamentoRoute
   '/perfil': typeof PerfilRoute
   '/precos': typeof PrecosRoute
   '/servicos': typeof ServicosRoute
@@ -166,16 +202,20 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/acompanhamento'
     | '/admin'
+    | '/agendamento'
     | '/cadastro'
     | '/carrinho'
     | '/chat'
     | '/como-funciona'
     | '/contato'
+    | '/endereco'
     | '/esqueci-senha'
     | '/historico'
     | '/login'
     | '/nova-senha'
+    | '/pagamento'
     | '/perfil'
     | '/precos'
     | '/servicos'
@@ -184,16 +224,20 @@ export interface FileRouteTypes {
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/acompanhamento'
     | '/admin'
+    | '/agendamento'
     | '/cadastro'
     | '/carrinho'
     | '/chat'
     | '/como-funciona'
     | '/contato'
+    | '/endereco'
     | '/esqueci-senha'
     | '/historico'
     | '/login'
     | '/nova-senha'
+    | '/pagamento'
     | '/perfil'
     | '/precos'
     | '/servicos'
@@ -202,16 +246,20 @@ export interface FileRouteTypes {
   id:
     | '__root__'
     | '/'
+    | '/acompanhamento'
     | '/admin'
+    | '/agendamento'
     | '/cadastro'
     | '/carrinho'
     | '/chat'
     | '/como-funciona'
     | '/contato'
+    | '/endereco'
     | '/esqueci-senha'
     | '/historico'
     | '/login'
     | '/nova-senha'
+    | '/pagamento'
     | '/perfil'
     | '/precos'
     | '/servicos'
@@ -221,16 +269,20 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AcompanhamentoRoute: typeof AcompanhamentoRoute
   AdminRoute: typeof AdminRoute
+  AgendamentoRoute: typeof AgendamentoRoute
   CadastroRoute: typeof CadastroRoute
   CarrinhoRoute: typeof CarrinhoRoute
   ChatRoute: typeof ChatRoute
   ComoFuncionaRoute: typeof ComoFuncionaRoute
   ContatoRoute: typeof ContatoRoute
+  EnderecoRoute: typeof EnderecoRoute
   EsqueciSenhaRoute: typeof EsqueciSenhaRoute
   HistoricoRoute: typeof HistoricoRoute
   LoginRoute: typeof LoginRoute
   NovaSenhaRoute: typeof NovaSenhaRoute
+  PagamentoRoute: typeof PagamentoRoute
   PerfilRoute: typeof PerfilRoute
   PrecosRoute: typeof PrecosRoute
   ServicosRoute: typeof ServicosRoute
@@ -247,11 +299,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/acompanhamento': {
+      id: '/acompanhamento'
+      path: '/acompanhamento'
+      fullPath: '/acompanhamento'
+      preLoaderRoute: typeof AcompanhamentoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/admin': {
       id: '/admin'
       path: '/admin'
       fullPath: '/admin'
       preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/agendamento': {
+      id: '/agendamento'
+      path: '/agendamento'
+      fullPath: '/agendamento'
+      preLoaderRoute: typeof AgendamentoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/cadastro': {
@@ -289,6 +355,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContatoRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/endereco': {
+      id: '/endereco'
+      path: '/endereco'
+      fullPath: '/endereco'
+      preLoaderRoute: typeof EnderecoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/esqueci-senha': {
       id: '/esqueci-senha'
       path: '/esqueci-senha'
@@ -315,6 +388,13 @@ declare module '@tanstack/react-router' {
       path: '/nova-senha'
       fullPath: '/nova-senha'
       preLoaderRoute: typeof NovaSenhaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/pagamento': {
+      id: '/pagamento'
+      path: '/pagamento'
+      fullPath: '/pagamento'
+      preLoaderRoute: typeof PagamentoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/perfil': {
@@ -357,16 +437,20 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AcompanhamentoRoute: AcompanhamentoRoute,
   AdminRoute: AdminRoute,
+  AgendamentoRoute: AgendamentoRoute,
   CadastroRoute: CadastroRoute,
   CarrinhoRoute: CarrinhoRoute,
   ChatRoute: ChatRoute,
   ComoFuncionaRoute: ComoFuncionaRoute,
   ContatoRoute: ContatoRoute,
+  EnderecoRoute: EnderecoRoute,
   EsqueciSenhaRoute: EsqueciSenhaRoute,
   HistoricoRoute: HistoricoRoute,
   LoginRoute: LoginRoute,
   NovaSenhaRoute: NovaSenhaRoute,
+  PagamentoRoute: PagamentoRoute,
   PerfilRoute: PerfilRoute,
   PrecosRoute: PrecosRoute,
   ServicosRoute: ServicosRoute,
