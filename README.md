@@ -5,42 +5,11 @@
 
 ### Prospecção inteligente, automação e novas oportunidades com inteligência artificial.
 
-<div align="center">
-
-<img src="https://img.shields.io/badge/Desenvolvido%20com-Lovable-FF6B6B?style=for-the-badge&logo=lovable&logoColor=white" alt="Desenvolvido com Lovable"/>
-
-</div>
-
----
-
-## 🛠️ Tecnologias e ferramentas
-
-<div align="center">
-
-### Desenvolvimento
-
-<img src="https://img.shields.io/badge/Lovable-FF6B6B?style=for-the-badge&logo=lovable&logoColor=white" alt="Lovable"/>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
-<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/>
-<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
-
-### Inteligência artificial e automação
-
-<img src="https://img.shields.io/badge/AI%20Agents-8A2BE2?style=for-the-badge&logo=probot&logoColor=white" alt="Agentes de IA"/>
-<img src="https://img.shields.io/badge/Artificial%20Intelligence-412991?style=for-the-badge&logo=openai&logoColor=white" alt="Inteligência Artificial"/>
-
-</div>
-
-> **Desenvolvido integralmente com o Lovable**, utilizando desenvolvimento assistido por inteligência artificial.
-
-*Observação: os badges de TypeScript, React, Vite, Tailwind CSS e inteligência artificial devem ser mantidos conforme as tecnologias e ferramentas efetivamente utilizadas no projeto.*
-
----
-
 ## 📌 Sobre o projeto
 
-O **Agente de Prospecção Automática** é um projeto voltado à otimização do processo de prospecção comercial, explorando o potencial da automação e da inteligência artificial para identificar oportunidades e tornar atividades comerciais mais eficientes.
+O **Agente de Prospecção Automática** 
+
+é um projeto voltado à otimização do processo de prospecção comercial, explorando o potencial da automação e da inteligência artificial para identificar oportunidades e tornar atividades comerciais mais eficientes.
 
 A proposta é transformar processos manuais em fluxos de trabalho mais organizados, reduzindo tarefas repetitivas e facilitando a busca por potenciais clientes.
 
@@ -70,6 +39,38 @@ Este projeto foi desenvolvido **exclusivamente com o Lovable**, ferramenta utili
 O processo permite transformar ideias em aplicações digitais, utilizando instruções em linguagem natural para orientar a construção e a evolução do projeto.
 
 A escolha do Lovable também representa uma exploração prática de novas formas de desenvolvimento de software, demonstrando como ferramentas de IA podem contribuir para acelerar a prototipação e a construção de soluções digitais.
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/Desenvolvido%20com-Lovable-FF6B6B?style=for-the-badge&logo=lovable&logoColor=white" alt="Desenvolvido com Lovable"/>
+
+</div>
+
+---
+
+## 🛠️ Tecnologias e ferramentas
+
+<div align="center">
+
+### Desenvolvimento
+
+<img src="https://img.shields.io/badge/Lovable-FF6B6B?style=for-the-badge&logo=lovable&logoColor=white" alt="Lovable"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
+<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/>
+<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
+
+### Inteligência artificial e automação
+
+<img src="https://img.shields.io/badge/AI%20Agents-8A2BE2?style=for-the-badge&logo=probot&logoColor=white" alt="Agentes de IA"/>
+<img src="https://img.shields.io/badge/Artificial%20Intelligence-412991?style=for-the-badge&logo=openai&logoColor=white" alt="Inteligência Artificial"/>
+
+</div>
+
+> **Desenvolvido integralmente com o Lovable**, utilizando desenvolvimento assistido por inteligência artificial.
+
+
+
 
 ## 🚀 Visão de futuro
 
