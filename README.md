@@ -1,3 +1,6 @@
+<img width="1910" height="911" alt="Captura de tela 2026-10-26 223722" src="https://github.com/user-attachments/assets/64824316-bcab-48d6-82df-119b659d486a" />
+
+
 # 🤖 Agente de Prospecção Automática
 
 ### Prospecção inteligente, automação e novas oportunidades com inteligência artificial.
