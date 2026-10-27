@@ -54,23 +54,17 @@ A escolha do Lovable também representa uma exploração prática de novas forma
 
 ### Desenvolvimento
 
-<img src="https://img.shields.io/badge/Lovable-FF6B6B?style=for-the-badge&logo=lovable&logoColor=white" alt="Lovable"/>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
-<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
-<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/>
-<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS"/>
+<img src="https://skillicons.dev/icons?i=react,typescript,vite,tailwind" alt="React, TypeScript, Vite e Tailwind CSS" />
 
 ### Inteligência artificial e automação
 
-<img src="https://img.shields.io/badge/AI%20Agents-8A2BE2?style=for-the-badge&logo=probot&logoColor=white" alt="Agentes de IA"/>
-<img src="https://img.shields.io/badge/Artificial%20Intelligence-412991?style=for-the-badge&logo=openai&logoColor=white" alt="Inteligência Artificial"/>
+<img src="https://img.shields.io/badge/Lovable-FF6B6B?style=for-the-badge&logo=lovable&logoColor=white" alt="Lovable" />
+<img src="https://img.shields.io/badge/AI%20Agents-8A2BE2?style=for-the-badge&logo=probot&logoColor=white" alt="Agentes de IA" />
+<img src="https://img.shields.io/badge/Artificial%20Intelligence-412991?style=for-the-badge&logo=openai&logoColor=white" alt="Inteligência Artificial" />
 
 </div>
 
 > **Desenvolvido integralmente com o Lovable**, utilizando desenvolvimento assistido por inteligência artificial.
-
-
-
 
 ## 🚀 Visão de futuro
 
