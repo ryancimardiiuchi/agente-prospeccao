@@ -7,13 +7,7 @@
 
 ## 📌 Sobre o projeto
 
-O **Agente de Prospecção Automática** 
-
-é um projeto voltado à otimização do processo de prospecção comercial, explorando o potencial da automação e da inteligência artificial para identificar oportunidades e tornar atividades comerciais mais eficientes.
-
-A proposta é transformar processos manuais em fluxos de trabalho mais organizados, reduzindo tarefas repetitivas e facilitando a busca por potenciais clientes.
-
-O projeto foi desenvolvido utilizando exclusivamente o **Lovable como ambiente de desenvolvimento**, demonstrando como ferramentas de desenvolvimento assistido por IA podem acelerar a criação de aplicações e transformar ideias em soluções digitais.
+O Agente de Prospecção Automática é um projeto desenvolvido para otimizar a prospecção comercial por meio da automação e inteligência artificial, facilitando a identificação de potenciais clientes, organizando oportunidades de negócio e reduzindo tarefas repetitivas. A aplicação foi desenvolvida utilizando exclusivamente o Lovable como ambiente de desenvolvimento, explorando o potencial das ferramentas assistidas por IA para transformar ideias em soluções digitais e tornar processos comerciais mais eficientes.
 
 ## 🎯 Objetivos
 
